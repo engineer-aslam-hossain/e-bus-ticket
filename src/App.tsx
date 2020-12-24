@@ -1,25 +1,118 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { createContext, useCallback, useEffect, useState } from 'react';
+import Home from './components/Home/Home';
+import { interval } from 'rxjs';
+import { scan, share, startWith, takeWhile } from 'rxjs/operators';
+
+import Swal from 'sweetalert2';
+interface Booking {
+  busId: number;
+  seatNumber: string;
+  gender: string;
+}
+
+interface SearchQuery {
+  from: string;
+  to: string;
+  journeyDate: string;
+  returnDate?: string;
+}
+
+interface BookingContextData {
+  bookings: Booking[];
+  searchQuery: SearchQuery;
+  makeSearch: (fromData: any) => void;
+  fetchBookings: () => void;
+  bookSeat: (busId: string, seatNumber: string, gender: string) => void;
+  unBookSeat: (busId: string, seatNumber: string) => void;
+}
+
+export const BookingContextDefaultValue: BookingContextData = {
+  bookings: [],
+  searchQuery: {
+    to: '',
+    from: '',
+    journeyDate: '',
+    returnDate: '',
+  },
+  makeSearch: () => null,
+  fetchBookings: () => null,
+  bookSeat: () => null,
+  unBookSeat: () => null,
+};
+
+const observable$ = interval(1000 * 60 * 10)
+  .pipe(
+    startWith(1000 * 60 * 10),
+    scan((time) => time - 1),
+    takeWhile((time) => time > 0)
+  )
+  .pipe(share());
+
+export const BookingContext = createContext<BookingContextData>(
+  BookingContextDefaultValue
+);
 
 function App() {
+  const [bookings, setBookings] = useState<Booking[]>([]);
+  const [searchQuery, setSearchQuery] = useState<SearchQuery>({
+    to: '',
+    from: '',
+    journeyDate: '',
+    returnDate: '',
+  });
+  const makeSearch = (fromData: SearchQuery) => {
+    setSearchQuery(fromData);
+  };
+  const fetchBookings = useCallback(() => {
+    const olderBookings: any = localStorage.getItem('bookings');
+    const parsedOldBookings: any =
+      (olderBookings && JSON.parse(olderBookings)) || [];
+    setBookings(parsedOldBookings);
+  }, [setBookings]);
+
+  const bookSeat = useCallback(
+    (busId, seatNumber, gender) => {
+      const olderBookings: any = localStorage.getItem('bookings');
+      const parsedOldBookings: any =
+        (olderBookings && JSON.parse(olderBookings)) || [];
+      const sub: any = observable$.subscribe(() =>
+        localStorage.setItem('bookings', olderBookings)
+      );
+      const newBookingArr: any = [
+        ...parsedOldBookings,
+        { busId, seatNumber, gender },
+      ];
+      setBookings(newBookingArr);
+      localStorage.setItem('bookings', JSON.stringify(newBookingArr));
+      Swal.fire('Booking Successful', '', 'success');
+      return () => sub.unsubscribe();
+    },
+    [setBookings]
+  );
+
+  const unBookSeat = () => {
+    // get get new data from localStroage
+    fetchBookings();
+  };
+
+  useEffect(() => {
+    fetchBookings();
+    observable$.subscribe();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BookingContext.Provider
+      value={{
+        bookings,
+        searchQuery,
+        makeSearch,
+        fetchBookings,
+        bookSeat,
+        unBookSeat,
+      }}
+    >
+      <Home />
+    </BookingContext.Provider>
   );
 }
 

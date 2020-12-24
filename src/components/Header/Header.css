@@ -1,0 +1,33 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: linear-gradient(90deg, #095dd7, #70b8ff);
+}
+span.navbar-brand a {
+  text-decoration: none;
+}
+
+.navbar-nav > a {
+  margin: 0 1rem;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.navbar-nav > a:hover {
+  color: #ffff3f;
+  text-decoration: none;
+}
+.navbar-nav > a.active {
+  border-bottom: 1px solid #ffff3f;
+  color: #ffff3f;
+}
+img.logo.img-fluid {
+  width: 5rem;
+  cursor: pointer;
+}

@@ -1,0 +1,398 @@
+[
+  {
+    "name": "Star Line",
+    "id": "201-DKH-KHU",
+    "type": "Non AC",
+    "startingPoint": "Saydabad",
+    "endPoint": "Cox's Bazar",
+    "departureTime": "8.30PM",
+    "arrivalTime": "8:35AM",
+    "ticketPrice": 800.0,
+    "seats": [
+      {
+        "seatNumber": "A-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "A-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "B-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "B-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "C-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "C-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "D-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "D-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "E-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "E-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "F-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "F-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "G-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "G-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "H-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "H-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "I-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "I-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "J-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "J-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "K-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "K-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "L-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "L-",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      }
+    ]
+  },
+  {
+    "name": "Saintmartin",
+    "id": "202-DKH-KHU",
+    "type": "Non AC",
+    "startingPoint": "Dhanmondi",
+    "endPoint": "Teknaf",
+    "departureTime": "8PM",
+    "arrivalTime": "6.30AM",
+    "ticketPrice": 900.0,
+    "seats": [
+      {
+        "seatNumber": "A-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "A-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "B-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "B-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "C-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "C-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "D-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "D-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "E-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "E-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "F-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "F-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "G-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "G-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "H-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "H-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "I-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "I-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "J-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "J-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "K-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "K-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "L-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "L-",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      }
+    ]
+  },
+  {
+    "name": "Hanif Paribahan",
+    "id": "203-DKH-KHU",
+    "type": "AC",
+    "startingPoint": "Gabtoli",
+    "endPoint": "Dinajpur",
+    "departureTime": "9:PM",
+    "arrivalTime": "7:35AM",
+    "ticketPrice": 1000.0,
+    "seats": [
+      {
+        "seatNumber": "A-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "A-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "B-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "B-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "C-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "C-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "D-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "D-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "E-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "E-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "F-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "F-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "G-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "G-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "H-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "H-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "I-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "I-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "J-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "J-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "K-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "K-2",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "L-1",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      },
+      {
+        "seatNumber": "L-",
+        "seatClass": "E-CLASS",
+        "fare": 500.0
+      }
+    ]
+  }
+]
